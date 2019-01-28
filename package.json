@@ -5,10 +5,7 @@
   "version": "1.0.3",
   "publisher": "zhfjyq",
   "license": "Apache-2.0",
-  "repository": {
-    "type": "github",
-    "url": "git@github.com:zhfjyq/vscode-plugin-drawio.git"
-  },
+  "repository": "https://github.com/zhfjyq/vscode-plugin-drawio",
   "keywords": [
     "markdown",
     "draw",
