@@ -3,6 +3,7 @@
   "displayName": "drawio",
   "description": "using draw.io in markdown",
   "version": "1.0.1",
+  "publisher": "zhfjyq",
   "license": "Apache-2.0",
   "keywords": [
     "markdown",
