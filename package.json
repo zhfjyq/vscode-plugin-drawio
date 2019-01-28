@@ -1,9 +1,9 @@
 {
-  "name": "drawio",
+  "name": "vscode-plugin-drawio",
   "displayName": "drawio",
   "description": "using draw.io in markdown",
   "version": "0.0.1",
-  "license": "apache",
+  "license": "SPDX",
   "keywords": [
     "markdown",
     "draw",
