@@ -1,7 +1,7 @@
 {
   "name": "vscode-plugin-drawio",
-  "displayName": "drawio",
-  "description": "using draw.io in markdown",
+  "displayName": "Drawio Markdown",
+  "description": "Using draw.io edit in markdown editor",
   "version": "1.0.7",
   "publisher": "zhfjyq",
   "license": "Apache-2.0",
@@ -34,9 +34,19 @@
     "commands": [
       {
         "command": "extension.drawio",
-        "title": "Drawio Markdown"
+        "title": "Drawio Markdown",
+        "icon": "icon.png"
       }
     ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "extension.drawio",
+          "group": "navigation",
+          "when": "resourceLangId == markdown"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
       "title": "drawio configrations",
