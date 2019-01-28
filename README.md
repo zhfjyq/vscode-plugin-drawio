@@ -10,10 +10,6 @@ using: Ctrl+P , select command: drawio to open chrome browser to edit svg
 
 - in you markdown file edit window,move you cursor to line for \*.svg, and press Ctrl+P, drawio to launch chrome edit this drawio svg file.
 
-```
-    ![](drawio_assets/777.svg)
-```
-
-- you must install a chrome browser
-- default using "offline" mode to open,so you can work in offline mode
-- you drawio file name must as \*.svg, for auto save
+* you must install a chrome browser
+* default using "offline" mode to open,so you can work in offline mode
+* you drawio file name must as \*.svg, for auto save
