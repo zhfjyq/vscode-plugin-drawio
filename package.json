@@ -2,7 +2,7 @@
   "name": "vscode-plugin-drawio",
   "displayName": "drawio",
   "description": "using draw.io in markdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "zhfjyq",
   "license": "Apache-2.0",
   "repository": {
