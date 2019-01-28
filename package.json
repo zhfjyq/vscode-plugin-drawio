@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/zhfjyq/vscode-plugin-drawio.git"
   },
-  "icon": "./assets/icon.png",
+  "icon": "icon.png",
   "keywords": [
     "markdown",
     "draw",
