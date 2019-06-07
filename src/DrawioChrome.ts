@@ -3,7 +3,7 @@ import {
   IBrowserProcess,
   IAPIClient,
   IDebuggingProtocolClient,
-  ITabResponse
+  ITabResponse,
 } from "chrome-debugging-client";
 
 import { createSession, ISessionExt } from "./createChromeSession";
@@ -11,7 +11,7 @@ import { createSession, ISessionExt } from "./createChromeSession";
 import {
   HeapProfiler,
   Page,
-  DOMStorage
+  DOMStorage,
 } from "chrome-debugging-client/dist/protocol/tot";
 
 import * as vscode from "vscode";
@@ -60,7 +60,7 @@ export class DrawioChrome {
     ) {
       this._chromeWorkDir = path.resolve(
         vscode.workspace.workspaceFolders[0].uri.fsPath,
-        ".drawio-chrome"
+        ".drawio-chrome",
       );
     } else {
       this._chromeWorkDir = path.resolve(os.tmpdir(), "drawio-chrome");
@@ -91,17 +91,17 @@ export class DrawioChrome {
     // 创建新的chrome session
     this._session = await createSession();
     this._process = await this._session.spawnBrowser({
-      additionalArguments: ["--mute-audio"],
+      additionalArguments: ["--mute-audio", "disable-infobars"],
       windowSize: { width: 1024, height: 720 },
       userDataRoot: this._chromeWorkDir,
       autoDeleteUseDataDir: false,
-      stdio: "inherit"
+      stdio: "inherit",
     });
     // 连接apiclient
     console.log("spawnBrowser:port=", this._process.remoteDebuggingPort);
     this._apiClient = await this._session.createAPIClient(
       "localhost",
-      this._process.remoteDebuggingPort
+      this._process.remoteDebuggingPort,
     );
     console.log("apiClient connected");
     // 连接到新打开的tab
@@ -109,7 +109,7 @@ export class DrawioChrome {
 
     // 创建debugclient
     this._debugClient = await this._session.openDebuggingProtocol(
-      this._tab.webSocketDebuggerUrl
+      this._tab.webSocketDebuggerUrl,
     );
     // 当用户关闭当前debug连接的tab时，关掉整个浏览器
     this._debugClient.on("close", async ev => {
@@ -133,7 +133,7 @@ export class DrawioChrome {
       if (params.key.match(".+.svg")) {
         fs.writeFileSync(
           path.join(this._assetsPath, params.key),
-          params.newValue
+          params.newValue,
         );
         vscode.window.showInformationMessage(`save drawio svg:${params.key}`);
       }
@@ -177,12 +177,12 @@ export class DrawioChrome {
       await this._domstorage.setDOMStorageItem({
         storageId: {
           isLocalStorage: true,
-          securityOrigin: "https://www.draw.io"
+          securityOrigin: "https://www.draw.io",
         },
         key: f,
         value: fs.readFileSync(path.join(this._assetsPath, f), {
-          encoding: "utf8"
-        })
+          encoding: "utf8",
+        }),
       });
       count++;
       console.log(`${count} load asset to chrome: ${f}`);

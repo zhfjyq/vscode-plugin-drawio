@@ -2,7 +2,7 @@
   "name": "vscode-plugin-drawio",
   "displayName": "Drawio Markdown",
   "description": "Using draw.io edit in markdown editor",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "publisher": "zhfjyq",
   "license": "Apache-2.0",
   "homepage": "https://github.com/zhfjyq/vscode-plugin-drawio/blob/master/README.md",
@@ -68,6 +68,7 @@
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "publish": "vsce pubilsh",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "yarn run compile && node ./node_modules/vscode/bin/test"
   },
