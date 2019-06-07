@@ -91,7 +91,12 @@ export class DrawioChrome {
     // 创建新的chrome session
     this._session = await createSession();
     this._process = await this._session.spawnBrowser({
-      additionalArguments: ["--mute-audio", "disable-infobars"],
+      additionalArguments: [
+        "--mute-audio",
+        "--disable-infobars",
+        "--enable-automation",
+        // `--app=${this._drawioUrl()}`,
+      ],
       windowSize: { width: 1024, height: 720 },
       userDataRoot: this._chromeWorkDir,
       autoDeleteUseDataDir: false,
