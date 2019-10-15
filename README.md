@@ -36,7 +36,7 @@ drawio 的离线模式提供了基础的功能(已经很强大了),如果你想�
 5. 选 browser,新建
 ![](images/op01.png)
 ![](images/op02.png)
-6. 修改文件名,扩展名从.drawio 改为 .png
+6. 修改文件名,扩展名从.drawio 改为 .svg
 ![](images/op03.png)
 ![](images/op04.png)
 7. 你会在当前markdown文件夹下 的 drawio_assets 中看到这个文件,vscode 中也会有更新保存提示.
