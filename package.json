@@ -76,9 +76,10 @@
     "@types/mocha": "^2.2.42",
     "@types/node": "^8.10.25",
     "typescript": "^3.1.4",
-    "vscode": "^1.1.25"
+    "vscode": "^1.1.36"
   },
   "dependencies": {
-    "chrome-debugging-client": "^0.6.8"
+    "chrome-debugging-client": "0.6.8",
+    "devtools-protocol": "^0.0.704903"
   }
 }

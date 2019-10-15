@@ -118,7 +118,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-chrome-debugging-client@^0.6.8:
+chrome-debugging-client@0.6.8:
   version "0.6.8"
   resolved "https://registry.yarnpkg.com/chrome-debugging-client/-/chrome-debugging-client-0.6.8.tgz#4fe6b3d338a1fb5c1a7581905ad7775df732c6aa"
   integrity sha512-LpaTa7hQu/CHvfvk4mwpSSGDheayVheHX0Eui3wU4bWQjWvnrNvFV5YMZobDifkuJicabZcHWcXQE4msTNxRIg==
@@ -207,6 +207,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+devtools-protocol@^0.0.704903:
+  version "0.0.704903"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.704903.tgz#bac5b5f2d475cf0f167651b0b94156df607def26"
+  integrity sha512-2a7t49/xtvY1Q6ayUICKUvo4z03noSzTAKXRKMLXEn8zk/ugHcyCcDMVb/Hsf+vV2E75gE8TQVyQEg02JBnrYA==
 
 diff@3.5.0:
   version "3.5.0"
@@ -793,7 +798,7 @@ vscode-test@^0.4.1:
     http-proxy-agent "^2.1.0"
     https-proxy-agent "^2.2.1"
 
-vscode@^1.1.25:
+vscode@^1.1.36:
   version "1.1.36"
   resolved "https://registry.yarnpkg.com/vscode/-/vscode-1.1.36.tgz#5e1a0d1bf4977d0c7bc5159a9a13d5b104d4b1b6"
   integrity sha512-cGFh9jmGLcTapCpPCKvn8aG/j9zVQ+0x5hzYJq5h5YyUXVGa1iamOaB2M2PZXoumQPES4qeAP1FwkI0b6tL4bQ==
