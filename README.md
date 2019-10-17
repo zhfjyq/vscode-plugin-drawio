@@ -3,7 +3,7 @@
 
 It's not nice to draw in Markdown, try this tool to seamlessly integrate the best-used online drawing tools DrawIO and Markdown, keep documents up and running, support offline mode, and disconnect it. Supports synchronous previews and document generation, enjoy smooth graphic markdown bar. any question please to https://github.com/zhfjyq/vscode-plugin-drawio .
 If it can help you , don't forget to give a star at the above address.
-![](<images/屏幕快照 2019-10-15 上午8.59.29.png>)
+![](/images/screen01.png)
 
 # DEMO
 
@@ -69,7 +69,7 @@ enjoy!!
 
 在 Markdown 中画图不爽了, 尝试一下这个工具吧,可以将最好用的在线绘图工具DrawIO和 Markdown 无缝整合, 文档同步更新和保存,更支持离线模式,断网也能工作. 支持同步预览和文档生成, 享用流畅的图文 Markdown 吧. 有任何问题请到:https://github.com/zhfjyq/vscode-plugin-drawio 反馈.
 如果能够给你帮助,别忘了去以上地址给个星.
-![](images/屏幕快照&#32;2019-10-15&#32;上午8.59.29.png)
+![](images/screen01.png)
 
 # DEMO 示例
 * 简单图形
