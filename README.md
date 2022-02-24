@@ -65,7 +65,8 @@ enjoy!!
 
 
 中文
-#chinese
+
+# chinese
 
 在 Markdown 中画图不爽了, 尝试一下这个工具吧,可以将最好用的在线绘图工具DrawIO和 Markdown 无缝整合, 文档同步更新和保存,更支持离线模式,断网也能工作. 支持同步预览和文档生成, 享用流畅的图文 Markdown 吧. 有任何问题请到:https://github.com/zhfjyq/vscode-plugin-drawio 反馈.
 如果能够给你帮助,别忘了去以上地址给个星.
